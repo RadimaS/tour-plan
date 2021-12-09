@@ -12,6 +12,11 @@
   .card
     width: 230px
     height: 230px
+  //поправка для футера из 29 задания
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width:  992px)
   .container
     max-width: 700px
@@ -169,6 +174,9 @@
     &-wrapper
       grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 20px
+    &__input
+      &-group
+        flex-basis: 48%
     &__title
       &-categories, &-additional, &-legal
         margin-top: 30px

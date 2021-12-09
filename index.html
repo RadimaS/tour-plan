@@ -454,7 +454,9 @@
               alt="Gymkhana club golf course"
               class="card__image"
             />
-            <h3 class="card__title card__second--title">Gymkhana club golf course</h3>
+            <h3 class="card__title card__second--title">
+              Gymkhana club golf course
+            </h3>
             <button class="card__button">Book now</button>
           </div>
           <!-- /.card -->
@@ -477,7 +479,9 @@
               alt="The blue marine discovery quest"
               class="card__image"
             />
-            <h3 class="card__title card__last">The blue marine discovery quest</h3>
+            <h3 class="card__title card__last">
+              The blue marine discovery quest
+            </h3>
             <button class="card__button">Book now</button>
           </div>
           <!-- /.card -->
@@ -487,7 +491,7 @@
       <!-- /.container -->
     </section>
     <!-- /.activities -->
-      <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <a href="index.php" class="footer__logo">
@@ -706,7 +710,9 @@
               <li class="footer__item footer__bottom-item">
                 <a href="#" class="footer__link">Conditions of use</a>
               </li>
-              <li class="footer__item footer__bottom-item footer__bottom--third">
+              <li
+                class="footer__item footer__bottom-item footer__bottom--third"
+              >
                 <a href="#" class="footer__link">Cancellation policy</a>
               </li>
             </ul>
@@ -722,7 +728,7 @@
       </div>
       <!-- /.container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="booking-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -730,21 +736,35 @@
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="#" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
+            name="phone"
+            pattern="[+]{1}-[0-9]-{11,14}"
+            required
           />
-          <input type="text" class="input modal__input" placeholder="Еmail*" />
+
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Еmail*"
+            name="email"
+            required
+          />
           <textarea
             class="message modal__message"
             placeholder="Message"
+            name="message"
           ></textarea>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -755,6 +775,7 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
