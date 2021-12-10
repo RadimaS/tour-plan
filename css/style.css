@@ -589,7 +589,13 @@ button {
 
 .hotel-info__main {
   color: #333333;
+  margin-top: 20px;
+}
+
+.hotel-thanks__description {
   margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .hotel-name {
