@@ -24,7 +24,7 @@
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="/index.html" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -367,14 +367,15 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Repudiandae perspiciatis odio, maiores cupiditate expedita
-                  suscipit unde. Accusamus sed consequuntur, tempora molestias
-                  deleniti, similique error, perspiciatis inventore repellendus
-                  assumenda sint! Id. Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Officiis et esse fugit, eaque quis magnam
-                  voluptatum fuga! Laboriosam enim rem, modi iste accusantium
-                  odio, et amet repellendus, voluptates nihil omnis.
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
                 </p>
                 <!-- /.reviews-slider__text -->
               </div>
@@ -402,18 +403,15 @@
                 </div>
                 <!-- /.reviews-slider__profile -->
                 <p class="reviews-slider__text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Excepturi quas fuga quod, impedit quibusdam assumenda repellat
-                  doloremque iste voluptatibus cupiditate earum consequatur,
-                  consectetur cumque laudantium fugit ratione. Esse, tempore
-                  iste. Sint tempore iusto totam omnis reiciendis nobis beatae
-                  asperiores mollitia doloremque! Hic culpa accusantium
-                  architecto similique nemo provident quaerat dolorem. Lorem
-                  ipsum, dolor sit amet consectetur adipisicing elit. In saepe,
-                  quaerat repellat omnis optio corporis ratione reiciendis
-                  voluptatem accusantium, quidem aliquam, voluptates
-                  consequuntur. Consequatur provident eligendi, omnis ad
-                  praesentium id!
+                  It was very nice hotel with cleanliness. Staff behavior was
+                  good and polite. They welcome us very well. Issue was only
+                  that Lift was not in working and we were allotted to 3rd floor
+                  and amenities articles were in corner of gallery which were
+                  giving bad feeling. Breakfast was good and support of the
+                  staff was also very nice. Location is not good as per
+                  atmosphere, it is very nearby most of the popular places but
+                  self location in a narrow street is not good. Overall it was a
+                  good experience and could recommend.
                 </p>
                 <!-- /.reviews-slider__text -->
               </div>
@@ -640,11 +638,15 @@
                   Tel (business hours) :
                   <a class="footer__link" href="tel:269-1500">269 1500</a><br />
                   Tel (hotline) Monday - Saturday:
-                  <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a>
+                  <a href="tel:52-56-61-38" class="footer__link"
+                    >52&#8209;56&#8209;61&#8209;38</a
+                  >
                   (08:00 am – 20:00 pm)<br />
                   Tel (hotline) Sunday:
-                  <a href="tel:52-56-61-38" class="footer__link">52-56-61-38</a>
-                  (08:00 am – 14:00 pm)
+                  <a href="tel:52-56-61-38" class="footer__link"
+                    >52&#8209;56&#8209;61&#8209;38</a
+                  >
+                  (08:00&nbsp;am&nbsp;&#8209;&nbsp;14:00&nbsp;pm)
                 </div>
                 <!-- /.footer__item-text -->
               </li>
@@ -682,8 +684,8 @@
                   type="tel"
                   class="input footer__input"
                   placeholder="Phone Number*"
-                  data-mask="+7(000)000-00-00"
                   name="phone"
+                  pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
                   required
                 />
               </div>
@@ -736,7 +738,7 @@
           <img src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-3">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form form">
+        <form action="send.php" method="post" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
@@ -750,7 +752,7 @@
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
-            pattern="[+]{1}-[0-9]-{11,14}"
+            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
             required
           />
 
@@ -766,8 +768,10 @@
             placeholder="Message"
             name="message"
           ></textarea>
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <div class="modal-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
         </form>
       </div>
       <!-- /.modal__dialog -->

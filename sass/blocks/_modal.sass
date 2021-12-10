@@ -14,16 +14,18 @@
       visibility: visible
       opacity: 1
   &__dialog
+    max-height: 95%
+    overflow: auto
     position: fixed
     top: 50%
     left: 50%
-    max-width: 478px
     padding: 33px 88px
-    border-radius: 8px
     background-color: $dark
-    transform: translate(-50%, -50%)
+    border-radius: 8px
     color: $light
+    max-width: 478px
     z-index: 101
+    transform: translate(-50%, -50%)
     visibility: hidden
     opacity: 0
     transition: opacity 0.2s
@@ -36,32 +38,35 @@
     top: 17px
     text-decoration: none
     cursor: pointer
-  &__title
-    font-style: normal
-    font-weight: bold
-    font-size: 18px
-    line-height: 23px
-    text-transform: uppercase
-    margin-top: 0
-    margin-bottom: 15px
-    text-align: center
-  &__form    
-    display: flex
-    align-items: center
-    justify-content: space-between
-    flex-wrap: wrap
   &__input
     width: 100%
     margin-top: 15px
   &__message
     width: 100%
-    min-height: 123px
-    margin-top: 15px
+    height: 123px
+    resize: none
+    margin-top: 15px 
   &__button
-    margin-top: 15px
+    margin-top: 14px
+    align-items: start
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+    // margin-left: 35px
+    align-items: end
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    text-transform: uppercase
+    margin: 0
+    text-align: center
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
