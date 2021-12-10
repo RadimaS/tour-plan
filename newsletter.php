@@ -5,17 +5,13 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Сообщение от клиентов";
+$title = "Оформление подписки";
 $body = "
-<h2>Новое сообщение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>Запрос на подписку</h2>
+<b>От:</b> $email<br>
 ";
 
 // Настройки PHPMailer
@@ -54,4 +50,4 @@ else {$result = "error";}
 
 // Отображение результата
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-header('Location: thankyou.html');
+header('Location: news_thanks.html');

@@ -1118,7 +1118,7 @@ button {
 
 .reviews-slider__button {
   position: absolute;
-  top: 40%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1217,6 +1217,7 @@ button {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 58px;
   margin-bottom: 57px;
 }
 
@@ -1775,6 +1776,18 @@ button {
   width: 100%;
 }
 
+@media (max-width: 1440px) {
+  .card__first {
+    padding-right: 80px;
+  }
+  .card__second {
+    padding-right: 80px;
+  }
+  .card__title {
+    margin-bottom: 18px;
+  }
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1933,7 +1946,7 @@ button {
     margin-bottom: 50px;
   }
   .reviews-slider__button {
-    top: 45%;
+    top: 50%;
   }
   .reviews-slider__button--prev {
     left: 0;
@@ -1971,7 +1984,7 @@ button {
     margin-bottom: 20px;
   }
   .activities__title {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   .card {
     width: 340px;
@@ -1982,6 +1995,9 @@ button {
   }
   .card__last {
     margin-right: 40px;
+  }
+  .card__first, .card__second {
+    padding-right: 28px;
   }
   .modal__dialog {
     padding: 20px 50px;
@@ -2916,6 +2932,7 @@ button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    padding-right: 95px;
   }
   .card__second {
     -webkit-box-ordinal-group: 4;
@@ -3012,7 +3029,7 @@ button {
   }
   .footer__bottom-ul {
     margin-top: 8px;
-    margin-right: 23px;
+    margin-right: 15px;
     margin-bottom: 15px;
     letter-spacing: -0.4px;
   }
@@ -3050,10 +3067,11 @@ button {
     width: 100%;
   }
   .footer__item--mb-2 {
-    margin-right: 50px;
+    margin-right: 20px;
+    margin-left: 2px;
   }
   .footer__text {
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .footer__button {
     -webkit-box-ordinal-group: 2;

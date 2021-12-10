@@ -1,3 +1,11 @@
+@media ( max-width: 1440px )
+  .card
+    &__first
+      padding-right: 80px
+    &__second
+      padding-right: 80px
+    &__title
+      margin-bottom: 18px
 @media ( max-width:  1200px)
   .container
     max-width: 960px
@@ -131,7 +139,7 @@
       margin-bottom: 50px
     &-slider
       &__button
-        top: 45%
+        top: 50%
         &--prev
           left: 0
         &--next
@@ -157,7 +165,7 @@
     &__card
       margin-bottom: 20px
     &__title
-      margin-top: 10px
+      margin-top: 50px
   .card
     width: 340px
     height: 255px
@@ -165,6 +173,8 @@
       margin-right: 127px
     &__last
       margin-right: 40px
+    &__first,&__second
+      padding-right: 28px
   .modal
     &__dialog
       padding: 20px 50px
@@ -841,6 +851,7 @@
       margin-right: 0
     &__first
       order: 1
+      padding-right: 95px
     &__second
       order: 3
       &--title
@@ -897,7 +908,7 @@
         margin-right: 0
       &-ul
         margin-top: 8px
-        margin-right: 23px
+        margin-right: 15px
         margin-bottom: 15px
         letter-spacing: -0.4px
       &-item
@@ -927,9 +938,11 @@
         width: 100%
     &__item
       &--mb-2
-        margin-right: 50px
+        margin-right: 20px
+        margin-left: 2px        
     &__text
-      margin-right: 50px
+
+      margin-right: 20px
     &__button
       order: 1
     &__info

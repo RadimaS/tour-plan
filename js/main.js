@@ -67,7 +67,7 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
   //обработка формы
-  $(".form").each(function() {
+  $(".modal__form").each(function() {
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -84,5 +84,46 @@ $(document).ready(function () {
         },
       },
     });
+  })  
+  $(".newsletter__form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        email: {
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
   })
+  $(".footer__form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Enter your name",
+          minlength: "The name must not be shorter than 2 characters",
+        },
+        phone: {
+          required: "Enter your phone",
+        },
+      },
+    });
+  });
+  $("#phone").mask("+7(999) 999-99-99");
+
+  $("#phone").on("blur", function () {
+    var last = $(this)
+      .val()
+      .substr($(this).val().indexOf("-") + 1);
+
+    if (last.length == 3) {
+      var move = $(this)
+        .val()
+        .substr($(this).val().indexOf("-") - 1, 1);
+      var lastfour = move + last;
+      var first = $(this).val().substr(0, 9);
+
+      $(this).val(first + "-" + lastfour);
+    }
+  });
 });
