@@ -67,7 +67,7 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
   }
   //обработка формы
-  $(".modal__form").each(function() {
+  $(".modal__form").each(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -85,8 +85,8 @@ $(document).ready(function () {
         },
       },
     });
-  })  
-  $(".newsletter__form").each(function() {
+  });
+  $(".newsletter__form").each(function () {
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -95,7 +95,7 @@ $(document).ready(function () {
         },
       },
     });
-  })
+  });
   $(".footer__form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -112,4 +112,10 @@ $(document).ready(function () {
     });
   });
   AOS.init();
+  $(function () {
+    $("#booking-phone").mask("+7(999) 999-99-99");
+  });
+  $(function () {
+    $("#footer-phone").mask("+7(999) 999-99-99");
+  });
 });
